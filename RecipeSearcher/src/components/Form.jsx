@@ -1,7 +1,7 @@
 import React from "react";
 import IngredientsList from "./Ingredientslist";
 import Recipe from "./Recipe";
-import { getRecipeFromChefClaude, getRecipeFromMistral } from "../ai";
+import  getRecipeFromMistral  from "../ai";
 
 export default function Form() {
     const [ingredients, setIngredients] = React.useState([
@@ -14,7 +14,7 @@ export default function Form() {
 
     async function getRecipe() {
         try {
-            const recipeMarkdown = await getRecipeFromChefClaude(ingredients);
+            const recipeMarkdown = await getRecipeFromMistral(ingredients);
             setRecipe(recipeMarkdown);
         } catch (error) {
             console.error("Failed to fetch recipe:", error);

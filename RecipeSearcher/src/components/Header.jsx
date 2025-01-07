@@ -1,4 +1,4 @@
-export default function Header() {
+export function Header() {
     return (
         <div className="header">
             <img src="chef.png" alt="cheflogo" />
