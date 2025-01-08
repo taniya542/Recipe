@@ -4,12 +4,7 @@ import Recipe from "./Recipe";
 import  getRecipeFromMistral  from "../ai";
 
 export default function Form() {
-    const [ingredients, setIngredients] = React.useState([
-        "all the main spices",
-        "pasta",
-        "ground beef",
-        "tomato paste",
-    ]);
+    const [ingredients, setIngredients] = React.useState([]);
     const [recipe, setRecipe] = React.useState("");
 
     async function getRecipe() {

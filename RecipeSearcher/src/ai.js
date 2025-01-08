@@ -24,5 +24,3 @@ export default  async function getRecipeFromMistral(ingredientsArr) {
     }
 }
 console.log(import.meta.env);
-
-console.log("HF Access Token:", import.meta.env.VITE_HF_ACCESS_TOKEN);
