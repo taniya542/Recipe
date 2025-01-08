@@ -23,4 +23,5 @@ export default  async function getRecipeFromMistral(ingredientsArr) {
         throw new Error("Failed to fetch recipe. Please try again later.");
     }
 }
-console.log(import.meta.env);
+
+
