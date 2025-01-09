@@ -11,6 +11,7 @@ html, body {
 body {
   min-height: 100%; /* Ensure body stretches to fill the page height */
   background-color: transparent; /* Ensure body doesn't override the gradient */
+  overflow-x: hidden;
 }
 
 
@@ -101,7 +102,7 @@ ul.ingredients-list > li {
   padding: 10px 28px;
   width: 50%;
   margin-left: 25%;
-  margin-top: -6%;
+  margin-top: -9%;
 }
 
 .get-recipe-container h3 {
@@ -160,8 +161,7 @@ h2{
   display: grid;
   grid-template-rows: repeat(4, auto); /* Limit to 5 rows per column */
   grid-auto-flow: column; /* Fill columns first */
-  gap: 10px; /* Space between items */
-  /* list-style: none; */
+  list-style-type: disc;
   padding: 0;
   margin: 0;
   margin-bottom: 1px;
@@ -172,7 +172,7 @@ h2{
   overflow: hidden; /* Ensure long text doesn't overflow */
   text-overflow: ellipsis; /* Add ellipsis for long text */
   padding: 5px; /* Add spacing inside list items */
-  background-color:#dcbaba; /* Pale gray */
+  /* background-color:#dcbaba; Pale gray */
    /* Optional: Background color for clarity */
   border-radius: 5px; /* Optional: Rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Optional: Subtle shadow */
@@ -182,10 +182,22 @@ h2{
 .suggested-recipe-container {
   color: #26292e;
   line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-top: 20px;
   font-size: 1.125rem;
   font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #e0d9d7;
+  border-radius: 8px;
 }
 
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {
   margin-bottom: 8px;
+  
 }
